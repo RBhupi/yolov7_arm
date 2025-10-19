@@ -1,0 +1,105 @@
+# ------------------------------------------------------
+# OS + IDE
+# ------------------------------------------------------
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+*.so
+.vscode/
+.idea/
+*.swp
+
+# ------------------------------------------------------
+# Python environments
+# ------------------------------------------------------
+.env
+.venv
+venv/
+mamba/
+*.lock
+*.yml
+
+# ------------------------------------------------------
+# Logs, caches, checkpoints
+# ------------------------------------------------------
+*.log
+*.bak
+*.tmp
+*.pickle
+*.pkl
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+runs/
+wandb/
+lightning_logs/
+cache/
+__cache__/
+output/debug_detected.jpg
+
+# ------------------------------------------------------
+# Data and image outputs
+# ------------------------------------------------------
+data/
+datasets/
+samples/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.gif
+
+# keep metadata/configs if needed
+!data/*.yaml
+!datasets/*.yaml
+
+# ------------------------------------------------------
+# Detection results and plots
+# ------------------------------------------------------
+output/
+plots/
+*.csv
+*.pdf
+*.mp4
+*.avi
+*.gif
+
+# ------------------------------------------------------
+# Jupyter and notebooks
+# ------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+.notebook/
+*.nbconvert.ipynb
+
+# ------------------------------------------------------
+# OS-generated files
+# ------------------------------------------------------
+ehthumbs.db
+Icon?
+Network Trash Folder
+Temporary Items
+.trashes
+*.AppleDouble
+*.LSOverride
+
+# ------------------------------------------------------
+# Backup / temp artifacts
+# ------------------------------------------------------
+*.old
+*.orig
+*.rej
+*.swo
+*.swn
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
