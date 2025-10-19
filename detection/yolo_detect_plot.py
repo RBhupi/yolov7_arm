@@ -13,7 +13,9 @@ from pathlib import Path
 # -------------------------------------------------------------------------
 # Load data
 # -------------------------------------------------------------------------
-csv_path = Path("/Users/bhupendra/projects/yolov7/output/detections.csv")
+#csv_path = Path("/Users/bhupendra/projects/yolov7/output/detections.csv")i
+
+csv_path = Path("/Users/bhupendra/projects/yolov7/output/detections_yolov10.csv")
 df = pd.read_csv(csv_path)
 
 vehicle_classes = ['car', 'truck', 'bus', 'motorcycle', 'aeroplane']
