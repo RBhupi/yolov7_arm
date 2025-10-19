@@ -75,6 +75,9 @@ class YOLOv7Detector:
                  use_fp16=True):
         self.device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
         self.use_fp16 = use_fp16
+        
+        print(f"[INFO] Model loaded on {self.device} (FP16={self.use_fp16})")
+        
         import torch.serialization as serialization
         serialization.add_safe_globals([Model])
         with serialization.safe_globals([Model]):
