@@ -213,8 +213,8 @@ def main():
     records = []
 
     for idx, img_path in enumerate(image_files):
-        if idx % 10 != 0:
-            continue
+        #if idx % 10 != 0:
+        #    continue
         timestamp = extract_timestamp_from_filename(img_path.name)
 
         
