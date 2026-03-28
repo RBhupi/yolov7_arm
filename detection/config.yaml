@@ -1,0 +1,25 @@
+model:
+  name: "yolov10x"          # any ultralytics model: yolov8n, yolov10x, yolo11x, yolo11s, etc.
+  conf: 0.25                # detection confidence threshold
+  iou: 0.45                 # NMS IoU threshold
+  imgsz: 1280               # inference image size (pixels)
+
+paths:
+  images_dir: "/Users/bhupendra/projects/yolov7/data/238106"
+  db_path: "/Users/bhupendra/projects/yolov7/output/detections.duckdb"
+  output_csv: "/Users/bhupendra/projects/yolov7/output/activity_summary.csv"
+  quicklooks_dir: "/Users/bhupendra/projects/yolov7/output/quicklooks"
+
+detection:
+  target_classes:
+    - airplane
+    - bus
+    - truck
+    - car
+    - motorcycle
+  movement_threshold_pct: 0.10  # centroid shift > this fraction of image diagonal = movement event
+
+analysis:
+  intermediate_bin_minutes: 5   # internal aggregation resolution (minutes)
+  output_bin_minutes: 15        # final CSV and plot resolution (minutes)
+  force_rerun: false            # if true, re-detect images already in the database

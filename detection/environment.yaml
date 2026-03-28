@@ -1,0 +1,20 @@
+name: vehicle-detection
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - ultralytics       # YOLOv8/v10/v11 + auto model download
+    - duckdb
+    - pandas
+    - numpy
+    - opencv-python
+    - pyyaml
+    - matplotlib
+    - seaborn
+    - jupyter
+    - ipykernel
+    - tqdm
